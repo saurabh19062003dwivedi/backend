@@ -16,7 +16,7 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 //database connect
 database.connect();
@@ -25,7 +25,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"http://localhost:3000",
+		// origin:"http://localhost:3000",
+		 origin: [
+      "https://boisterous-kleicha-b1c307.netlify.app",
+      "http://localhost:3000"
+    ],
 		credentials:true,
 	})
 )
