@@ -27,7 +27,7 @@ app.use(
 	cors({
 		// origin:"http://localhost:3000",
 		 origin: [
-      "https://boisterous-kleicha-b1c307.netlify.app",
+      "https://your-frontend.vercel.app",
       "http://localhost:3000"
     ],
 		credentials:true,
