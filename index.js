@@ -27,7 +27,7 @@ app.use(
 	cors({
 		// origin:"http://localhost:3000",
 		 origin: [
-      "https://your-frontend.vercel.app",
+      "https://frontend-git-main-saurabh19062003dwivedis-projects.vercel.app",
       "http://localhost:3000"
     ],
 		credentials:true,
